@@ -8,14 +8,28 @@
 
 import UIKit
 
-class ConversionViewController : UIViewController {
+class ConversionViewController : UIViewController, UITextFieldDelegate {
     
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ConversionViewController loaded its view.")
         updateCelsiusLabel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let date = Date()
+        let calender = NSCalendar.current
+        let components = calender.dateComponents(in: TimeZone.current, from: date)
+        
+        if components.hour! > 17 {
+            view.backgroundColor = UIColor.darkGray
+        } else {
+            view.backgroundColor = UIColor.green
+        }
+
     }
     
     var fahrenheitValue: Measurement<UnitTemperature>? {
@@ -63,6 +77,19 @@ class ConversionViewController : UIViewController {
         } else {
             celsiusLabel.text = "???"
         }
+    }
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        
+        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
+        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        if existingTextHasDecimalSeparator != nil,
+            replacementTextHasDecimalSeparator != nil {
+            return false
+        } else {
+            return true }
     }
 
 }
