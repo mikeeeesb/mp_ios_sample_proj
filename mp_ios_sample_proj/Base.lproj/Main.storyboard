@@ -104,6 +104,16 @@
             </objects>
             <point key="canvasLocation" x="1648.8" y="35.532233883058474"/>
         </scene>
+        <!--Web View-->
+        <scene sceneID="foh-vV-fOP">
+            <objects>
+                <viewController id="uZq-fq-fYz" customClass="WebViewController" customModule="mp_ios_sample_proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web View" id="N5K-30-vb6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYn-Mc-oGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="36"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aPD-Xg-4Ob">
             <objects>
@@ -116,11 +126,29 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xrv-h7-dj9"/>
                         <segue destination="TkI-zX-7iS" kind="relationship" relationship="viewControllers" id="jld-cN-HSh"/>
+                        <segue destination="uZq-fq-fYz" kind="relationship" relationship="viewControllers" id="uxJ-fb-Rfy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B85-5E-OAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709.60000000000002" y="35.532233883058474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nYd-EN-jby">
+            <objects>
+                <viewController id="HId-Fv-4SV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CvF-Av-Mf7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZBE-C7-xN7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6h4-nv-jTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eV9-Pb-v7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

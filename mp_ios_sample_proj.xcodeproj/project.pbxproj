@@ -16,6 +16,7 @@
 		9317E7631F283A7B0047354C /* mp_ios_sample_projUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9317E7621F283A7B0047354C /* mp_ios_sample_projUITests.swift */; };
 		936756E71F3572D100FC6083 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936756E61F3572D100FC6083 /* MapKit.framework */; };
 		936756E91F35773400FC6083 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936756E81F35773400FC6083 /* MapViewController.swift */; };
+		936756EB1F37E67900FC6083 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936756EA1F37E67900FC6083 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9317E7641F283A7B0047354C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936756E61F3572D100FC6083 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		936756E81F35773400FC6083 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		936756EA1F37E67900FC6083 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				9317E74B1F283A7B0047354C /* LaunchScreen.storyboard */,
 				9317E74E1F283A7B0047354C /* Info.plist */,
 				936756E81F35773400FC6083 /* MapViewController.swift */,
+				936756EA1F37E67900FC6083 /* WebViewController.swift */,
 			);
 			path = mp_ios_sample_proj;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				1572C23B1F2AA0B30019665B /* ConversionViewController.swift in Sources */,
 				936756E91F35773400FC6083 /* MapViewController.swift in Sources */,
 				9317E7431F283A7B0047354C /* AppDelegate.swift in Sources */,
+				936756EB1F37E67900FC6083 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
