@@ -49,6 +49,7 @@ class MapViewController : UIViewController, MKMapViewDelegate {
         let locationButton : UIButton = UIButton()
         locationButton.setTitle("Zoom to Location", for: UIControlState.normal)
         locationButton.translatesAutoresizingMaskIntoConstraints = false
+    
         locationButton.addTarget(self, action: #selector(MapViewController.locationDidChange(_:)), for: UIControlEvents.touchUpInside)
         locationButton.backgroundColor = UIColor.lightGray
         view.addSubview(locationButton)
