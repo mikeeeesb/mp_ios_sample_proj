@@ -33,6 +33,7 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         
+        
         let item = itemStore.allItems[indexPath.row]
         cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = "$\(item.valueInDollars)"
@@ -46,10 +47,24 @@ class ItemsViewController: UITableViewController {
         // If the table view is asking to commit a delete command...
         if editingStyle == UITableViewCellEditingStyle.delete {
             let item = itemStore.allItems[indexPath.row]
+            
+            let title = "Delete \(item.name)?"
+            let message = "Are you sure you want to delete this item?"
+            let alertControl = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertControl.addAction(cancelAction)
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive,
+                                             handler: { (action) -> Void in
+                                                // Remove the item from the store 
+                                                self.itemStore.removeItem(item)
+                                                // Also remove that row from the table view with an animation
+                                                self.tableView.deleteRows(at: [indexPath], with: .automatic) })
+            alertControl.addAction(deleteAction)
+            present(alertControl, animated: true, completion: nil)
             // Remove the item from the store
-            itemStore.removeItem(item)
+            //itemStore.removeItem(item)
             // Also remove that row from the table view with an animation
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            //tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
     
