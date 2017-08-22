@@ -53,6 +53,12 @@ class ItemsViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView,
+                            moveRowAt sourceIndexPath: IndexPath,
+        to destinationIndexPath: IndexPath) {
+        itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+    }
+    
     @IBAction func addNewItem(_ sender: UIButton) {
         let newItem = itemStore.createItem()
         // Figure out where that item is in the array
