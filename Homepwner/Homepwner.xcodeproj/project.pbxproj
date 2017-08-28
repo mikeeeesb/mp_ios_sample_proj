@@ -17,6 +17,7 @@
 		15CDA9151F4640E10039C5D4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CDA9141F4640E10039C5D4 /* Item.swift */; };
 		15CDA9171F4650090039C5D4 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CDA9161F4650090039C5D4 /* ItemStore.swift */; };
 		15CDA9191F4E0E920039C5D4 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CDA9181F4E0E920039C5D4 /* ItemCell.swift */; };
+		15D8D51A1F54CFBF0000CB6D /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D5191F54CFBF0000CB6D /* ImageStore.swift */; };
 		936CE2621F525390009CB241 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CE2611F525390009CB241 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		15CDA9141F4640E10039C5D4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		15CDA9161F4650090039C5D4 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		15CDA9181F4E0E920039C5D4 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		15D8D5191F54CFBF0000CB6D /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		936CE2611F525390009CB241 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				15CDA9181F4E0E920039C5D4 /* ItemCell.swift */,
 				15CDA8EA1F463E1F0039C5D4 /* Main.storyboard */,
 				936CE2611F525390009CB241 /* DetailViewController.swift */,
+				15D8D5191F54CFBF0000CB6D /* ImageStore.swift */,
 				15CDA9141F4640E10039C5D4 /* Item.swift */,
 				15CDA9161F4650090039C5D4 /* ItemStore.swift */,
 				15CDA8ED1F463E1F0039C5D4 /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 				15CDA9171F4650090039C5D4 /* ItemStore.swift in Sources */,
 				936CE2621F525390009CB241 /* DetailViewController.swift in Sources */,
 				15CDA8E71F463E1F0039C5D4 /* AppDelegate.swift in Sources */,
+				15D8D51A1F54CFBF0000CB6D /* ImageStore.swift in Sources */,
 				15CDA9191F4E0E920039C5D4 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
