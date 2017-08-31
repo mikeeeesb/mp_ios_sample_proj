@@ -14,6 +14,8 @@
 		15D8D5321F58C1F90000CB6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D8D5301F58C1F90000CB6D /* LaunchScreen.storyboard */; };
 		15D8D53D1F58C1F90000CB6D /* TouchTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D53C1F58C1F90000CB6D /* TouchTrackerTests.swift */; };
 		15D8D5481F58C1F90000CB6D /* TouchTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D5471F58C1F90000CB6D /* TouchTrackerUITests.swift */; };
+		15D8D5561F58C2610000CB6D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D5551F58C2610000CB6D /* Line.swift */; };
+		15D8D5581F58C3D30000CB6D /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D5571F58C3D30000CB6D /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		15D8D5431F58C1F90000CB6D /* TouchTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D8D5471F58C1F90000CB6D /* TouchTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTrackerUITests.swift; sourceTree = "<group>"; };
 		15D8D5491F58C1F90000CB6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D8D5551F58C2610000CB6D /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = ../Line.swift; sourceTree = "<group>"; };
+		15D8D5571F58C3D30000CB6D /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawView.swift; path = ../DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		15D8D5261F58C1F90000CB6D /* TouchTracker */ = {
 			isa = PBXGroup;
 			children = (
+				15D8D5551F58C2610000CB6D /* Line.swift */,
+				15D8D5571F58C3D30000CB6D /* DrawView.swift */,
 				15D8D5271F58C1F90000CB6D /* AppDelegate.swift */,
 				15D8D5291F58C1F90000CB6D /* ViewController.swift */,
 				15D8D52B1F58C1F90000CB6D /* Main.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D8D5561F58C2610000CB6D /* Line.swift in Sources */,
 				15D8D52A1F58C1F90000CB6D /* ViewController.swift in Sources */,
+				15D8D5581F58C3D30000CB6D /* DrawView.swift in Sources */,
 				15D8D5281F58C1F90000CB6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
