@@ -10,6 +10,8 @@
 		156FE38D1F7304F2000D891C /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FE38C1F7304F2000D891C /* FlickerAPI.swift */; };
 		156FE38F1F730952000D891C /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FE38E1F730952000D891C /* PhotoStore.swift */; };
 		156FE3911F730DB9000D891C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FE3901F730DB9000D891C /* Photo.swift */; };
+		15CD6FC41F7AD98E00B04D48 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD6FC31F7AD98E00B04D48 /* PhotoDataSource.swift */; };
+		15CD6FC61F7ADC7300B04D48 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD6FC51F7ADC7300B04D48 /* PhotoCollectionViewCell.swift */; };
 		15D8D5661F6340E80000CB6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8D5651F6340E80000CB6D /* AppDelegate.swift */; };
 		15D8D56B1F6340E80000CB6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D8D5691F6340E80000CB6D /* Main.storyboard */; };
 		15D8D56D1F6340E80000CB6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D8D56C1F6340E80000CB6D /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		156FE38C1F7304F2000D891C /* FlickerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
 		156FE38E1F730952000D891C /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		156FE3901F730DB9000D891C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		15CD6FC31F7AD98E00B04D48 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		15CD6FC51F7ADC7300B04D48 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		15D8D5621F6340E80000CB6D /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D8D5651F6340E80000CB6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D8D56A1F6340E80000CB6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,8 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				15D8D5931F6341210000CB6D /* PhotosViewController.swift */,
+				15CD6FC51F7ADC7300B04D48 /* PhotoCollectionViewCell.swift */,
 				15D8D5651F6340E80000CB6D /* AppDelegate.swift */,
 				15D8D5691F6340E80000CB6D /* Main.storyboard */,
+				15CD6FC31F7AD98E00B04D48 /* PhotoDataSource.swift */,
 				15D8D56C1F6340E80000CB6D /* Assets.xcassets */,
 				15D8D56E1F6340E80000CB6D /* LaunchScreen.storyboard */,
 				15D8D5711F6340E80000CB6D /* Info.plist */,
@@ -197,20 +203,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Michael Pettiford";
 				TargetAttributes = {
 					15D8D5611F6340E80000CB6D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					15D8D5751F6340E80000CB6D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 15D8D5611F6340E80000CB6D;
 					};
 					15D8D5801F6340E80000CB6D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 15D8D5611F6340E80000CB6D;
 					};
@@ -271,6 +280,8 @@
 				15D8D5941F6341210000CB6D /* PhotosViewController.swift in Sources */,
 				15D8D5661F6340E80000CB6D /* AppDelegate.swift in Sources */,
 				156FE38F1F730952000D891C /* PhotoStore.swift in Sources */,
+				15CD6FC41F7AD98E00B04D48 /* PhotoDataSource.swift in Sources */,
+				15CD6FC61F7ADC7300B04D48 /* PhotoCollectionViewCell.swift in Sources */,
 				156FE38D1F7304F2000D891C /* FlickerAPI.swift in Sources */,
 				156FE3911F730DB9000D891C /* Photo.swift in Sources */,
 			);
@@ -337,7 +348,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -345,7 +358,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,7 +405,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -396,7 +415,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -430,7 +453,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mp.Photorama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -442,7 +466,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mp.Photorama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -455,7 +480,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mp.PhotoramaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photorama.app/Photorama";
 			};
 			name = Debug;
@@ -469,7 +495,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mp.PhotoramaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photorama.app/Photorama";
 			};
 			name = Release;
@@ -482,7 +509,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mp.PhotoramaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Photorama;
 			};
 			name = Debug;
@@ -495,7 +523,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mp.PhotoramaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Photorama;
 			};
 			name = Release;
