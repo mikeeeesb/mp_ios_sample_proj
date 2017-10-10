@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1530E14D1F8D7FD40020277D /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1530E14C1F8D7FD40020277D /* ImageStore.swift */; };
+		1530E14F1F8D81A30020277D /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1530E14E1F8D81A30020277D /* PhotoInfoViewController.swift */; };
 		156FE38D1F7304F2000D891C /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FE38C1F7304F2000D891C /* FlickerAPI.swift */; };
 		156FE38F1F730952000D891C /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FE38E1F730952000D891C /* PhotoStore.swift */; };
 		156FE3911F730DB9000D891C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FE3901F730DB9000D891C /* Photo.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1530E14C1F8D7FD40020277D /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		1530E14E1F8D81A30020277D /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		156FE38C1F7304F2000D891C /* FlickerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
 		156FE38E1F730952000D891C /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		156FE3901F730DB9000D891C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				156FE38C1F7304F2000D891C /* FlickerAPI.swift */,
 				156FE38E1F730952000D891C /* PhotoStore.swift */,
 				156FE3901F730DB9000D891C /* Photo.swift */,
+				1530E14C1F8D7FD40020277D /* ImageStore.swift */,
+				1530E14E1F8D81A30020277D /* PhotoInfoViewController.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -280,10 +286,12 @@
 				15D8D5941F6341210000CB6D /* PhotosViewController.swift in Sources */,
 				15D8D5661F6340E80000CB6D /* AppDelegate.swift in Sources */,
 				156FE38F1F730952000D891C /* PhotoStore.swift in Sources */,
+				1530E14D1F8D7FD40020277D /* ImageStore.swift in Sources */,
 				15CD6FC41F7AD98E00B04D48 /* PhotoDataSource.swift in Sources */,
 				15CD6FC61F7ADC7300B04D48 /* PhotoCollectionViewCell.swift in Sources */,
 				156FE38D1F7304F2000D891C /* FlickerAPI.swift in Sources */,
 				156FE3911F730DB9000D891C /* Photo.swift in Sources */,
+				1530E14F1F8D81A30020277D /* PhotoInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
