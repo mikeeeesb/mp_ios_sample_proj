@@ -17,6 +17,7 @@ class ClearUITableViewCell : UITableViewCell {
     let gradientLayer = CAGradientLayer()
     var originalCenter = CGPoint()
     var deleteOnDragRelease = false
+    var completeOnDragRelease = false
     // The object that acts as delegate for this cell.
     var delegate: TableViewCellDelegate?
     // The item that this cell renders.
@@ -60,8 +61,10 @@ class ClearUITableViewCell : UITableViewCell {
             center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
             // has the user dragged the item far enough to initiate a delete/complete?
             deleteOnDragRelease = frame.origin.x < -frame.size.width / 2.0
+            completeOnDragRelease = frame.origin.x > frame.size.width / 2.0
         }
         // 3
+        /*
         if recognizer.state == .ended {
             // the frame this cell had before user dragged it
             let originalFrame = CGRect(x: 0, y: frame.origin.y,
@@ -75,6 +78,30 @@ class ClearUITableViewCell : UITableViewCell {
                     // notify the delegate that this item should be deleted
                     delegate!.toDoItemDeleted(todoItem: toDoItem!)
                 }
+            }
+        }
+        */
+        if recognizer.state == .ended {
+            let originalFrame = CGRect(x: 0, y: frame.origin.y,
+                                       width: bounds.size.width, height: bounds.size.height)
+            if deleteOnDragRelease {
+                if delegate != nil && toDoItem != nil {
+                    // notify the delegate that this item should be deleted
+                    delegate!.toDoItemDeleted(todoItem: toDoItem!)
+                }
+            } else if completeOnDragRelease {
+                if toDoItem != nil {
+                    toDoItem!.completed = true
+                }
+                var tester = self.textLabel?.attributedText
+                //[NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSStrikethroughColorAttributeName: UIColor.red]
+                tester?.attribute(NSStrike, range: NSMakeRange(0, index.length))
+                label.strikeThrough = true
+                itemCompleteLayer.hidden = false
+                
+                UIView.animate(withDuration: 0.2, animations: {self.frame = originalFrame})
+            } else {
+                UIView.animate(withDuration: 0.2, animations: {self.frame = originalFrame})
             }
         }
     }

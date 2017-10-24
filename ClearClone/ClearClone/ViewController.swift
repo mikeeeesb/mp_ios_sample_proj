@@ -27,18 +27,18 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
             return
         }
         
-        toDoItems.append(ToDoItem(text: "feed the cat"))
-        toDoItems.append(ToDoItem(text: "buy eggs"))
-        toDoItems.append(ToDoItem(text: "watch WWDC videos"))
-        toDoItems.append(ToDoItem(text: "rule the Web"))
-        toDoItems.append(ToDoItem(text: "buy a new iPhone"))
-        toDoItems.append(ToDoItem(text: "darn holes in socks"))
-        toDoItems.append(ToDoItem(text: "write this tutorial"))
-        toDoItems.append(ToDoItem(text: "master Swift"))
-        toDoItems.append(ToDoItem(text: "learn to draw"))
-        toDoItems.append(ToDoItem(text: "get more exercise"))
-        toDoItems.append(ToDoItem(text: "catch up with Mom"))
-        toDoItems.append(ToDoItem(text: "get a hair cut"))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "feed the cat")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "buy eggs")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "watch WWDC videos")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "rule the Web")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "buy a new iPhone")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "darn holes in socks")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "write this tutorial")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "master Swift")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "learn to draw")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "get more exercise")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "catch up with Mom")))
+        toDoItems.append(ToDoItem(text: NSMutableAttributedString(string: "get a hair cut")))
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,7 +59,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! ClearUITableViewCell
         cell.textLabel?.backgroundColor = UIColor.clear
         let item = toDoItems[indexPath.row]
-        cell.textLabel?.text = item.text
+        //cell.textLabel?.text = item.text
+        cell.textLabel?.attributedText = item.text
         cell.selectionStyle = .none
         cell.delegate = self
         cell.toDoItem = item

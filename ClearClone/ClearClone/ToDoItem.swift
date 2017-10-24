@@ -9,9 +9,9 @@
 import UIKit
 
 class ToDoItem : NSObject {
-    var text : String
+    var text : NSMutableAttributedString
     var completed : Bool
-    init(text: String) {
+    init(text: NSMutableAttributedString) {
         self.text = text
         self.completed = false
     }
