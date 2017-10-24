@@ -14,6 +14,8 @@
 		1568525E1F9FCFEB00081D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1568525C1F9FCFEB00081D92 /* LaunchScreen.storyboard */; };
 		156852691F9FCFEB00081D92 /* ClearCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156852681F9FCFEB00081D92 /* ClearCloneTests.swift */; };
 		156852741F9FCFEB00081D92 /* ClearCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156852731F9FCFEB00081D92 /* ClearCloneUITests.swift */; };
+		156852821F9FD2BE00081D92 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156852811F9FD2BE00081D92 /* ToDoItem.swift */; };
+		156852841F9FD99000081D92 /* ClearUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156852831F9FD99000081D92 /* ClearUITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1568526F1F9FCFEB00081D92 /* ClearCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		156852731F9FCFEB00081D92 /* ClearCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCloneUITests.swift; sourceTree = "<group>"; };
 		156852751F9FCFEB00081D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156852811F9FD2BE00081D92 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		156852831F9FD99000081D92 /* ClearUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearUITableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				156852531F9FCFEB00081D92 /* AppDelegate.swift */,
 				156852551F9FCFEB00081D92 /* ViewController.swift */,
+				156852831F9FD99000081D92 /* ClearUITableViewCell.swift */,
 				156852571F9FCFEB00081D92 /* Main.storyboard */,
+				156852811F9FD2BE00081D92 /* ToDoItem.swift */,
 				1568525A1F9FCFEB00081D92 /* Assets.xcassets */,
 				1568525C1F9FCFEB00081D92 /* LaunchScreen.storyboard */,
 				1568525F1F9FCFEB00081D92 /* Info.plist */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				156852561F9FCFEB00081D92 /* ViewController.swift in Sources */,
+				156852841F9FD99000081D92 /* ClearUITableViewCell.swift in Sources */,
 				156852541F9FCFEB00081D92 /* AppDelegate.swift in Sources */,
+				156852821F9FD2BE00081D92 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
